@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+/* CLASSES GERAIS */
+
+.t_center{
+    text-align: center;
+}
+
+.large{
+    width: 100% !important;
+}
+.mide{
+    width: 48%;
+}
+
+/* FINAL DE CLASSES GERAIS */
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+     background-color: #262a70ee;
+}
+
+.cont_form{
+    width: 380px;
+    padding: 4rem 1rem; 
+    border: 1px solid gray;
+    text-align: center;
+    color: #8f99aa;
+    background-color: #eaeaf1;
+    border-radius: 10px;
+}
+
+.cont_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group_login{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.group_login > input{
+    width: 30%;
+    padding: 10px 8px;
+    border: 0;
+    color: #6c798f;
+    letter-spacing: .4px;
+    border-radius: 12px;
+}
+
+.group_login .lembrar{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* .L_row{
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+
+
+form > input{
+    width: 100%;
+    padding: 14px 10px; 
+    margin-bottom: 12px;
+    outline: none;
+    border: .5px solid rgba(0, 0, 0, 0.300);
+    color: #6c798f;
+    letter-spacing: .4px;
+    border-radius: 14px;
+}
+
+form select{
+    width: 100%;
+    padding: 12px 10px; 
+    margin-bottom: 12px;
+    outline: none;
+    border: .5px solid rgba(0, 0, 0, 0.300);
+    color: #6c798f;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    border-radius: 14px;
+}
+
+
+form input[type='submit']{
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #f56369 , #f3926ce3);
+}
+
+
+/* ABAIXO TUDO PARA A PÁGINA DO PAINEL DE CONTROLE */
+
+
+
+
+
+
+
+.header > i{
+    font-size: 1.2rem;
+}
+
+
+/* PARTE DE LINKS */
+
+
+
+
+
+/* EDITAR-USUÁRIOS*/
+
+
+
+
+.alert_sucesso{
+    padding:.8rem 0;
+    font-size: 1.11rem;
+    width: 100%;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: gray;
+    color: white;
+
+}
+.alert_error{
+    padding:.8rem 0;
+    font-size: 1.11rem;
+    width: 100%;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: rgb(165, 22, 22);
+     color: white;
+}
+
+
+/* PARA LISTAR-DEPOIMENTOS */
+
+.teste{
+    padding: 2rem 0;
+       background-color: rgb(207, 9, 9);
+}
+
+
+
+
+/* PARA OS LINKS DE PAGINAÇÃO DA PÁGINA */
+
+
+.page_atc{
+    background-color: rgb(146, 146, 146) !important;
+}
+
+ /* .paginacao a:nth-child(1){
+      display: none;
+ } */
+
+
+/* PARA LINK ATIVO NOS LINKS DO PAINEL */
+
+.link_act{
+    padding: 0.5rem 0.2rem 0.5rem 1rem !important;
+    color: rgb(0, 0, 0) !important;
+    letter-spacing: 1px;
+}
+
+
+/* PARA O BODY DO PAINEL, PARTE COM O CONTEÚDO DO PAINEL */
+
+.body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;    
+}
+
+
+
+
+
+
+/* ARROW LISTAR DEPOIMENTOS */
+
+.arrow{
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+}
+

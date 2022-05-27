@@ -1,0 +1,187 @@
+.header{
+    width: 100%;
+    padding: 1rem 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4d3282f1;
+    color: white;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    transition: 1s;
+}
+
+.singIn{
+    position: absolute; 
+    right: 2%;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: -3px;
+}
+
+
+/* PARTE DE MENUS DO DASHBORD PRINCIPAL */
+
+.desktop ul a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.desktop ul li{
+    display: inline-block;
+    padding: 0 .8rem;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.desktop ul li a:hover{
+    color: rgb(219, 219, 219);
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.mobile{
+    display: none;
+    z-index: 3;
+  
+}
+
+.mobile i{
+    position: relative;
+    z-index: 4;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.mobile ul{
+    list-style-type: none;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    top: 65px;
+    text-align: center;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.mobile li{
+    cursor: pointer;
+    padding: .7rem 0;
+}
+
+.mobi_atc ul{
+    transition: 1s;
+    height: 200px;
+    padding: .8rem 0;
+}
+
+
+/* BOX DE STATUS FINA DE EMAIL */
+
+.box_email{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.content{
+    text-align: center;
+    width: 40%;
+    max-width: 300px;
+    z-index: 999;
+    position: relative;
+    background-color: rgb(211, 52, 4);
+    padding: 1.5rem 1%;
+    margin-top: -5rem;
+    opacity: 0;
+    font-size: 1.1rem;
+    color: white;
+    transition: 1s;
+}
+
+
+/* PARTE DOD LOADER AJAX */
+
+.loader_ajax{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.loader_ajax img{
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+
+/* DEPOIMENTOS */
+
+
+.dep_cont{
+    width: 50%;
+}
+.serv_cont{
+    width: 50%;
+}
+
+.depoi_single{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.depoi_single p{
+    padding: .3rem 0;
+}
+
+.serv_single{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.serv_single{
+    padding: .3rem 0;
+}
+
+/* PARTE DE MEDIA SCREEN */
+
+
+@media screen and (max-width: 768px){
+    .header{
+        padding: 1rem 4rem 1rem 2rem;    
+         transition: 1s;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 469px){
+    .dep_cont{
+        width: 100%;
+    }
+    .serv_cont{
+        width: 100%;
+    }
+}

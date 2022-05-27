@@ -1,0 +1,37 @@
+.large{
+    width: 100% !important;
+}
+.mide{
+    width: 48%;
+}
+
+.user_container{
+    width: 100%;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+
+.form_row{
+    margin: 1rem 0;
+}
+
+.form_row h3{
+    margin: .5rem 0;
+}
+
+.form_row input, textarea{
+    width: 100%;
+    padding: 14px 10px; 
+    margin-bottom: 12px;
+    outline: none;
+    border: .5px solid rgba(0, 0, 0, 0.300);
+    color: #6c798f;
+    letter-spacing: .4px;
+    border-radius: 14px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    cursor:pointer;
+}

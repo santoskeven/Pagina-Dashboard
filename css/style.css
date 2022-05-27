@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.t_center{
+    text-align: center;
+}
+
+
+.cont_bg{
+    height: calc(100vh - 59px);
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.cont_bg img{
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.bullets{
+    z-index: 4;
+    position: absolute;
+    margin-left: 10px;
+    bottom: 10%;
+}
+
+.bullets span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.bullets span.act_bull{
+    background-color: gray;
+}
+
+.cont_bg form input{
+    width: 100%;
+    border: 0;
+    padding: .5rem .5rem;
+    margin: .4rem 0; 
+    outline: none;
+    border-radius: 2px;
+}
+
+.sub{
+    text-align: center;
+    background-color: rgba(238, 168, 168, 0.904);
+    font-size: 1rem; 
+    color: white;
+    transition: .5s;
+}
+
+.sub:hover{
+    transition: .5s;
+    color: rgb(223, 223, 223);
+    background-color: rgb(243, 140, 140);
+}
+
+.data_author{
+    display: flex;
+    width: 100%;
+    padding: 4% 8%;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.cont_text{
+    padding-top: 2%;
+    width: 60%;
+    
+}
+
+.cont_text p{
+    line-height: 24px;
+    padding-bottom: 1rem;
+}
+
+.cont_img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont_img img{
+    background-size: 100% 100%;
+    width: 65%;
+    min-width: 270px;
+    min-height: 270px;
+}
+
+.esp{
+    padding: 4% 5%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.esp_single{
+    padding: 2% 3%;
+    text-align: center;
+}
+
+.esp_single i{
+   font-size: 43px;
+}
+
+.esp_single h2{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/*PARA DEFINIR A POSIÇÃO DO FOOTER QUANDO TIVER NA PÁGINA DE ERRO404*/
+.fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 2%;
+    border-top: 1.5px solid gray;
+    /* background-color: #beb1d971; */
+}
+
+footer i{
+    padding: 0 .7rem;
+    font-size: 1.3rem;
+    color: black;
+    transition: .2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer i:hover{
+    transition: .2s;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+/* PARA O MAPA NO CONTATO */
+
+#map{width: 100%; height: 400px; } 
+
+/* PARA O FORMULÁRIO NO CONTATO */
+
+.contato_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato_cont form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.styleInput{ 
+    margin: .45rem 0;
+    padding: 2.5%;
+    border-radius: 15px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+/*  PARTE DE MEDIA SCREEN */
+
+
+@media screen and (max-width: 768px){
+
+    .data_author{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4% 8%;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+
+    .cont_text{
+        width: 100%;
+        
+    }
+    .cont_img{
+        width: 100%;
+    }
+
+    .flex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .esp_single{
+        max-width: 450px;
+        padding: 2% 3%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 469px){
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer p{
+        margin-bottom: .7rem;
+    }
+
+    .cont_form{
+        width: 90%;
+    }
+}
