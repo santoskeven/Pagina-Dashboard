@@ -11,7 +11,17 @@
 
 ?>
 
-<section class="user_container">
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="<?php echo INCLUDE_PATH_PAINEL?>css/editar-slide.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <section class="user_container">
 
     <h2>Editar slides</h2>
 
@@ -51,12 +61,12 @@
     ?>
 
         <div class="form_row">
-            <h3>Nome</h3>
+            <h3>Nome:</h3>
             <input type="text" name="nome" placeholder="Usuário" value="<?php echo $slide['nome'] ?>">
         </div><!--form_row-->
 
         <div class="form_row">
-            <h3>Imagem</h3>
+            <h3>Imagem:</h3>
             <input type="file" name="imagem" placeholder="Escolher uma imagem">
             <input type="hidden" name="imagem_atual" value="<?php echo $slide['slide'] ?>">
         </div><!--form_row-->
@@ -68,3 +78,8 @@
     </form>
 
 </section><!--container-->
+
+    </body>
+
+</html>
+

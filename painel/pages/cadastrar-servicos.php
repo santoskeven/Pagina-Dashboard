@@ -12,7 +12,7 @@
 
 <section class="user_container">
 
-    <h2>Adicionar servicos</h2>
+    <h2>Cadastrar serviço</h2>
 
     <form method="post" enctype="multipart/form-data">
 

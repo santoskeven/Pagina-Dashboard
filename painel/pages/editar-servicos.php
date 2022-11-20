@@ -10,7 +10,17 @@
 
 ?>
 
-<section class="user_container">
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="<?php echo INCLUDE_PATH_PAINEL?>css/editar-servico.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <section class="user_container">
 
     <h2>Editar Serviços</h2>
 
@@ -47,3 +57,10 @@
     </form>
 
 </section><!--container-->
+
+    </body>
+
+</html>
+
+
+

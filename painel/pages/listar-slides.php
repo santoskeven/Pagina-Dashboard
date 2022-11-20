@@ -32,12 +32,12 @@
     
 <div class="listar_container large">
 
-<h2 style="margin: 10px 0 20px 10px">Listar slides</h2>
+<h2 style="padding: 20px 0 20px 20px">Listar slides</h2>
 
 <div class="row large">
     <div class="only_flex">
         <div class="only_single">
-            <h3>nome</h3>
+            <h3>Nome</h3>
         </div><!--single-->
         <div class="only_single">
             <h3>Slide</h3>
@@ -46,13 +46,13 @@
             <h3>Editar</h3>
         </div><!--single-->
         <div class="only_single">
-            <h3>excluir</h3>
+            <h3>Excluir</h3>
         </div><!--single-->
         <div class="only_single">
-            <h3>up</h3>
+            <h3>Cima</h3>
         </div><!--single-->
         <div class="only_single">
-            <h3>down</h3>
+            <h3>Baixo</h3>
         </div><!--single-->
     </div><!--only_flex-->
 </div><!--row-->

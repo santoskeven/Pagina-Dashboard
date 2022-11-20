@@ -114,48 +114,13 @@ form input[type='submit']{
 /* ABAIXO TUDO PARA A PÁGINA DO PAINEL DE CONTROLE */
 
 
-
-
-
-
-
 .header > i{
     font-size: 1.2rem;
 }
 
-
-/* PARTE DE LINKS */
-
-
-
-
-
 /* EDITAR-USUÁRIOS*/
 
 
-
-
-.alert_sucesso{
-    padding:.8rem 0;
-    font-size: 1.11rem;
-    width: 100%;
-    letter-spacing: 1px;
-    margin: 1rem 0;
-    text-align: center;
-    background-color: gray;
-    color: white;
-
-}
-.alert_error{
-    padding:.8rem 0;
-    font-size: 1.11rem;
-    width: 100%;
-    letter-spacing: 1px;
-    margin: 1rem 0;
-    text-align: center;
-    background-color: rgb(165, 22, 22);
-     color: white;
-}
 
 
 /* PARA LISTAR-DEPOIMENTOS */
@@ -166,18 +131,10 @@ form input[type='submit']{
 }
 
 
-
-
 /* PARA OS LINKS DE PAGINAÇÃO DA PÁGINA */
 
 
-.page_atc{
-    background-color: rgb(146, 146, 146) !important;
-}
 
- /* .paginacao a:nth-child(1){
-      display: none;
- } */
 
 
 /* PARA LINK ATIVO NOS LINKS DO PAINEL */
@@ -198,11 +155,6 @@ form input[type='submit']{
     justify-content: space-between;
     padding: 2%;    
 }
-
-
-
-
-
 
 /* ARROW LISTAR DEPOIMENTOS */
 

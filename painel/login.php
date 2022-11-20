@@ -32,6 +32,9 @@
         <title>Painel de login</title>
         <link href="<?php echo INCLUDE_PATH_PAINEL?>css/login.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
 
 
@@ -74,7 +77,7 @@
 
             <div class="cont_form_log">
 
-                <h2 style="padding-bottom: 1.4rem;">Efetuar login</h2>
+                <h2 style="padding-bottom: 1.4rem;" class="f_opens">Efetuar login</h2>
 
                 <p class="alert" style="
                 <?php
@@ -83,7 +86,7 @@
                     }
                 ?>">Falha ao fazer login</p>
                 
-                <form method="post" action="">
+                <form method="post" action="" class="f_opens">
 
                     <input type="text" name="user" require placeholder="Digite seu user">
                     <input type="password" name="pass" require placeholder="Digite sua senha">

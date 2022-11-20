@@ -74,7 +74,7 @@
 
     <div class="form_row">
         <h3>cargo:</h3>
-        <select name="cargo" style="width: 100%" >
+        <select name="cargo"z'>
             <?php 
                foreach (Painel::$cargos as $key => $value) {
                    if($key < $_SESSION['cargo']){echo '<option value="'.$key.'">'.$value.'</option>';}

@@ -66,7 +66,7 @@
     </div><!--form_row-->
 
     <div class="form_row">
-        <h3>Imagem</h3>
+        <h3>Imagem:</h3>
         <input type="file" name="imagem" placeholder="Escolher uma imagem">
         <input type="hidden" name="imagem_atual" value="<?php echo $_SESSION['img']?>">
     </div><!--form_row-->

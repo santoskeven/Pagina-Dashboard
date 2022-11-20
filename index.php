@@ -8,7 +8,6 @@
     $infosite->execute();
     $infosite = $infosite->fetch();
 
-
 ?>
 
 <!DOCTYPE html>
@@ -59,32 +58,32 @@
        <div class='content'></div>
     </div><!--box_email-->
 
-    <header class="header" style="position:relative"> 
+    <header class="header"> 
 
-        <div>
-            <!-- <img src=""> -->
-            <h2>Logo</h2>
+        <div id="content">
+            <div>
+                <h2>Logo</h2>
+            </div>
+
+            <nav class="desktop">
+                <ul>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>Servicos">Serviços</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>   
+                </ul>
+            </nav>
+
+            <nav class=" mobile">
+            <i class="fa-solid fa-bars icon"></i>
+                <ul>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>Serviços">Serviços</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                </ul>
+            </nav> 
         </div>
-
-        <nav class="desktop">
-            <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>Servicos">Serviços</a></li>
-                <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>   
-            </ul>
-        </nav>
-
-        <nav class=" mobile">
-        <i class="fa-solid fa-bars icon"></i>
-            <ul>
-                <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>Serviços">Serviços</a></li>
-                <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-            </ul>
-        </nav>  
-
 
         <a class="singIn" href="<?php echo INCLUDE_PATH_PAINEL?>"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         
@@ -112,43 +111,33 @@
 
             <div class="dep_cont">
 
-                <?php
+                <h2>Lorem ipsun</h2>
+
                 
-                $sql = Mysql::conectar()->prepare('SELECT * FROM `tb_site_depoimentos` ORDER BY order_id ASC LIMIT 3');
-                $sql->execute();
-                $depoimentos = $sql->fetchAll();
+                <!-- // $sql = Mysql::conectar()->prepare('SELECT * FROM `tb_site_depoimentos` ORDER BY order_id ASC LIMIT 3');
+                // $sql->execute();
+                // $depoimentos = $sql->fetchAll();
 
-                foreach ($depoimentos as $key => $value) {
-                ?>
-                    
-                <div class="depoi_single">
+                // $sql = Mysql::conectar()->prepare("SELECT * FROM `tb_site_servicos` ORDER BY order_id ASC LIMIT 3");
+                // $sql->execute();
+                // $servicos = $sql->fetchAll(); -->
 
-                <H3><?php echo $value['nome']; ?></H3>
-                <p><?php echo $value['depoimento']; ?></p>
-                <p><?php echo $value['data']; ?></p>
+                 <div class='centerContent'>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                 </div>
 
-                </div><!--depoi_single-->
-
-                <?php } ?>
-
-            </div>
-
-            <div class="serv_cont"> 
-               
-                <?php 
-                
-                    $sql = Mysql::conectar()->prepare("SELECT * FROM `tb_site_servicos` ORDER BY order_id ASC LIMIT 3");
-                    $sql->execute();
-                    $servicos = $sql->fetchAll();
-
-                    foreach ($servicos as $key => $value) {
-                ?>
-
-                <div class="serv_single">
-                <p><?php echo $value['servico']; ?></p>
-                </div><!--serv_single-->
-
-                <?php } ?>
+                 <div class='centerBottom'>
+                    <p>Lorem ipsum</p>
+                        <div class='Bt_icon'>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    <p>Lorem ipsum dolor sit</p>
+                 </div>
 
 
             </div>
@@ -156,14 +145,14 @@
     </footer>
 
      
-<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
-<script src="<?php echo INCLUDE_PATH; ?>js/contains.js"></script>
+<!-- <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/contains.js"></script> -->
 <script src="<?php echo INCLUDE_PATH; ?>js/form.js">
 <script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsM0UCAfKbsVjwYjveeWhfcOaELswj7R8&callback=initMap&libraries=&v=weekly"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
 <script src="https://kit.fontawesome.com/fb43290b99.js" crossorigin="anonymous"></script>
-<script src="<?php echo INCLUDE_PATH; ?>js/func.js"></script>
+// <script src="<?php echo INCLUDE_PATH; ?>js/func.js"></script>
 
 
 <?php 
